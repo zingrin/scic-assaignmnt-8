@@ -8,6 +8,7 @@ let reversed = "";
   return reversed;
 }
 console.log("Problem 1:", reverseString("hello"));
+
 // Problem 2: Count Vowels in a String
 
 function countVowels(str) {
@@ -45,10 +46,17 @@ function findMax(arr) {
 }
 console.log("Problem 4:", findMax([5, 1, 9, 3])); 
 
-
-
-
 // Problem 5: Remove Duplicates from an Array
+function removeDuplicates(arr) {
+  let unique = [];
+  for (let num of arr) {
+    if (!unique.includes(num)) {
+      unique.push(num);
+    }
+  }
+  return unique;
+}
+console.log("Problem 5:", removeDuplicates([1, 2, 2, 3, 4, 4])); 
 
 // Problem 6: Sum of All Numbers in an Array
 
