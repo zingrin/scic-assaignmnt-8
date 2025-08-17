@@ -69,7 +69,16 @@ function sumArray(arr) {
 console.log("Problem 6:", sumArray([1, 2, 3, 4])); 
 
 // Problem 7: Find Even Numbers in an Array
-
+function findEven(arr) {
+  let evens = [];
+  for (let num of arr) {
+    if (num % 2 === 0) {
+      evens.push(num);
+    }
+  }
+  return evens;
+}
+console.log("Problem 7:", findEven([1, 2, 3, 4, 5, 6])); 
 
 // Problem 8: Capitalize First Letter of Each Word
 
