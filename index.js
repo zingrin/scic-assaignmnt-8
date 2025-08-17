@@ -92,7 +92,31 @@ function capitalizeWords(str) {
   return result.join(" ");
 }
 console.log("Problem 8:", capitalizeWords("hello world"));
-// Problem 9: Find the Factorial of a Number
 
+// Problem 9: Find the Factorial of a Number
+function factorial(n) {
+  let result = 1;
+  for (let i = 1; i <= n; i++) {
+    result *= i;
+  }
+  return result;
+}
+console.log("Problem 9:", factorial(5));
 
 // Problem 10: PingPong Challenge
+function pingPong() {
+  let output = [];
+  for (let i = 1; i <= 20; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      output.push("PingPong");
+    } else if (i % 3 === 0) {
+      output.push("Ping");
+    } else if (i % 5 === 0) {
+      output.push("Pong");
+    } else {
+      output.push(i);
+    }
+  }
+  return output;
+}
+console.log("Problem 10:", pingPong());
